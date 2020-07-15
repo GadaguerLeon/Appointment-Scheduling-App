@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane fx:id="parentContainer" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="softwareiialternate.view_controller.HomeViewController">
+   <children>
+      <AnchorPane id="AnchorPane" fx:id="container" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0">
+         <children>
+            <ImageView fitHeight="600.0" fitWidth="800.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/v333-ning-50-medical_2.jpg" />
+               </image>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </ImageView>
+            <Text layoutX="303.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Home" textAlignment="CENTER" underline="true" wrappingWidth="192.13671875">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <Button fx:id="hv_patButton" layoutX="315.0" layoutY="383.0" mnemonicParsing="false" onAction="#patButtonAction" prefHeight="38.0" prefWidth="169.0" style="-fx-background-color: #002f51;" text="Patients" textFill="WHITE" />
+            <ImageView fitHeight="191.0" fitWidth="176.0" layoutX="86.0" layoutY="161.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/calendar.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="149.0" fitWidth="144.0" layoutX="328.0" layoutY="177.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/patients.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="hv_apptButton" layoutX="90.0" layoutY="383.0" mnemonicParsing="false" onAction="#apptButtonAction" prefHeight="38.0" prefWidth="169.0" style="-fx-background-color: #002f51;" text="Appointments" textFill="WHITE" />
+            <Button fx:id="hv_repButton" layoutX="535.0" layoutY="383.0" mnemonicParsing="false" onAction="#viewReportsButton" prefHeight="38.0" prefWidth="169.0" style="-fx-background-color: #002f51;" text="Reports" textFill="WHITE" />
+            <ImageView fitHeight="144.0" fitWidth="155.0" layoutX="547.0" layoutY="177.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/reports.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

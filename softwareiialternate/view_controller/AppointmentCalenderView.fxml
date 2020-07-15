@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane fx:id="parentContainer" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="softwareiialternate.view_controller.AppointmentCalenderViewController">
+    <children>
+        <AnchorPane id="AnchorPane" fx:id="container" prefHeight="600.0" prefWidth="800.0">
+            <children>
+                <ImageView fitHeight="600.0" fitWidth="821.0" layoutX="4.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/v333-ning-50-medical_2.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="btnBack" fitHeight="30.0" fitWidth="39.0" layoutX="57.0" layoutY="49.0" onMouseClicked="#apptHomeButtonAction" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/back.png" />
+                    </image>
+                </ImageView>
+                <Text layoutX="235.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Appointment View By Calender" textAlignment="CENTER" wrappingWidth="346.13671875">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Text>
+                <RadioButton fx:id="btnWeekly" layoutX="318.0" layoutY="104.0" mnemonicParsing="false" onAction="#btnWeeklyPressed" text="Weekly" />
+                <RadioButton fx:id="btnBiWeekly" layoutX="318.0" layoutY="138.0" mnemonicParsing="false" onAction="#btnBiWeeklyPressed" text="Bi-Weekly" />
+                <RadioButton fx:id="btnMonthly" layoutX="318.0" layoutY="169.0" mnemonicParsing="false" onAction="#btnMonthlyPressed" prefHeight="17.0" prefWidth="75.0" text="Monthly" />
+                <DatePicker fx:id="datePicker" layoutX="57.0" layoutY="134.0" prefHeight="25.0" prefWidth="219.0" />
+                <TableView fx:id="table" layoutX="57.0" layoutY="240.0" prefHeight="353.0" prefWidth="710.0" />
+                <Button fx:id="btnViewAppointments" layoutX="581.0" layoutY="209.0" mnemonicParsing="false" onAction="#viewAppointments" prefHeight="25.0" prefWidth="132.0" text="View Appointments" />
+            </children>
+        </AnchorPane>
+    </children>
+</StackPane>

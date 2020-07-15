@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane fx:id="parentContainer" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="softwareiialternate.view_controller.AppointmentReportsViewController">
+  <children>
+    <AnchorPane id="AnchorPane" fx:id="container" prefHeight="600.0" prefWidth="800.0">
+      <children>
+        <ImageView fitHeight="600.0" fitWidth="806.0" layoutX="4.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@../images/v333-ning-50-medical_2.jpg" />
+          </image>
+        </ImageView>
+        <ImageView fx:id="btnBack" fitHeight="30.0" fitWidth="39.0" layoutX="57.0" layoutY="49.0" onMouseClicked="#apptHomeButtonAction" onMousePressed="#apptHomeButtonAction" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@../images/back.png" />
+          </image>
+        </ImageView>
+        <Text layoutX="235.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Appointment Reports" textAlignment="CENTER" wrappingWidth="346.13671875">
+          <font>
+            <Font size="20.0" />
+          </font>
+        </Text>
+        <RadioButton fx:id="btnCountByType" layoutX="57.0" layoutY="123.0" mnemonicParsing="false" onAction="#btnCountByTypePressed" prefHeight="30.0" prefWidth="210.0" text="Count of appointments by type." />
+        <RadioButton fx:id="btnAptByCr" layoutX="309.0" layoutY="123.0" mnemonicParsing="false" onAction="#btnAptByCrPressed" prefHeight="30.0" prefWidth="210.0" text="Appointment total by counselor" />
+        <RadioButton fx:id="btnAptByState" layoutX="546.0" layoutY="123.0" mnemonicParsing="false" onAction="#btnAptByStatePressed" prefHeight="30.0" prefWidth="210.0" text="Appointment total by state" />
+        <Button fx:id="btnReport" layoutX="585.0" layoutY="179.0" mnemonicParsing="false" onAction="#generateReport" prefHeight="25.0" prefWidth="132.0" text="Generate Report" />
+        <BarChart fx:id="bar" animated="false" layoutX="55.0" layoutY="215.0" prefHeight="343.0" prefWidth="699.0">
+          <xAxis>
+            <CategoryAxis side="BOTTOM" fx:id="xAxis" />
+          </xAxis>
+          <yAxis>
+            <NumberAxis fx:id="yAxis" side="LEFT" />
+          </yAxis>
+        </BarChart>
+      </children>
+    </AnchorPane>
+  </children>
+</StackPane>
