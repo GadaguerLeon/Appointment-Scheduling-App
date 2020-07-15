@@ -6,7 +6,7 @@ The application must meet all business requirements while incorporating exceptio
 
 ## Scenario
 You have been hired by The Fernandes Group to create a schedule application for their phone counseling business. 
-The Fernandez Group was founded by Dr. D. Fernandes a highly respected winner of the Nobel Prize in Psychology. 
+The Fernandes Group was founded by Dr. D. Fernandes a highly respected winner of the Nobel Prize in Psychology. 
 In the course of his Nobel Prize winning research, Dr. Fernandes pioneered a revolutionary 1-on-1 phone counseling concept that is the basis of their business. 
 The main office of The Fernandes Group is in Philadelphia, PA. While all the phone counselors work from their home offices. 
 All of the home offices are in The United States. Due to legal and privacy concerns, all work and data connections can only be conducted within The United States. 
