@@ -1,4 +1,4 @@
-# Phone-Counseling-Company
+# Appointment-Scheduling-App
 
 ## Overview
 This is a project created for my Software II - Advanced Java Concepts course. The goal of this project is to build a database application based on a hypothetical scenario.
